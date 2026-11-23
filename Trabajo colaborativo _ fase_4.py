@@ -54,7 +54,7 @@ class Carro:
             f"Ingreso: {self._hora_ingreso}:00 | Salió: {self._hora_salida}:00"
         )
 
-
+# Aquí capturamos excepciones al ingresar los datos para que el programa no falle.
 def registrar_carro():
     """Captura datos y aplica encadenamiento de excepciones."""
     try:
@@ -94,7 +94,7 @@ while True:
         continuar = input("¿Deseas registrar otro carro? (s/n): ").strip().lower()
         if continuar != "s":
             break
-
+# Mostramos el consolidado del día con los vehículos registrados y el valor a pagar.
 # --- Resumen final ---
 print("\n" + "-" * 50)
 print(f"📊 Total de carros registrados: {len(lista_carros)}")
