@@ -7,7 +7,7 @@ logging.basicConfig(
     level=logging.ERROR,
     format="%(asctime)s - %(levelname)s - %(message)s"
 )
-
+#definicion de excepciones personalizadas
 # 2. Excepciones Personalizadas
 class ErrorParqueadero(Exception):
     """Excepción base para errores del sistema de parqueadero."""
@@ -25,7 +25,7 @@ class RegistroCarroError(ErrorParqueadero):
     """Excepción para demostrar encadenamiento de excepciones."""
     pass
 
-
+#aqui definimos la clase carro con sus datos basicos y revisamos que no haya errores al ingresar
 class Carro:
     _valor_hora = 2000
     
